@@ -4,7 +4,7 @@ import Image from 'next/image'
 import profilePic from "../../public/images/profile/farkhan9.png"
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
-import { LinkArrow } from '@/components/Icons'
+import { DownloadIcon, LinkArrow } from '@/components/Icons'
 import HireMe from '@/components/HireMe'
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg"
 
@@ -31,8 +31,8 @@ export default function Home() {
                 <Link href="/CV_Farkhan_Hamzah_Firdaus.pdf" target={"_blank"} 
                 className='flex items-center bg-dark text-light p-2.5 px-6 
                 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark 
-                border-2 border-solid border-transparent hover:border-dark' download={false}>
-                  Resume <LinkArrow className={"w-6 ml-1"}/>
+                border-2 border-solid border-transparent hover:border-dark' download={true}>
+                  Download&nbsp;CV <DownloadIcon className={"w-auto ml-1"}/>
                 </Link>
                 <Link href="mailto:farhanhamzah71@gmail.com" target={'_blank'} className='ml-4 text-lg font-medium capitalize text-dark underline'>
                   Contact
