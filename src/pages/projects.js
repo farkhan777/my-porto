@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Layout from '@/components/Layout';
 import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import Image from 'next/image';
 import { GithubIcon } from '@/components/Icons';
+import { useRouter } from 'next/router';
 import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg';
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -37,6 +38,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 const Project = ({ type, title, summary, img, link, github }) => {
   return (
     <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative'>
+      <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl' />
       <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
         <Image src={img} alt={title} className='w-full h-auto'></Image>
       </Link>
@@ -154,8 +156,9 @@ const Projects = () => {
     // Add more project data here...
   ];
 
+  const router = useRouter();
   const [currentPage, setCurrentPage] = useState(1);
-  const projectsPerPage = 9;
+  const projectsPerPage = 6;
 
   // Calculate index range for current page
   const indexOfLastProject = currentPage * projectsPerPage;
@@ -165,7 +168,12 @@ const Projects = () => {
   // Change page
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
+    // router.push(`/?page=${pageNumber}`, undefined, { shallow: true });
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentPage]);
 
   return (
     <>
@@ -177,7 +185,7 @@ const Projects = () => {
         <Layout className='pt-16'>
           <AnimatedText text='Imagination Trumps Knowledge!' className='text-center mb-16' />
 
-          <div className='grid grid-cols-12 gap-8'>
+          <div className='grid grid-cols-8 gap-24'>
             {currentProjects.map((project, index) => (
               <div className='col-span-4' key={index}>
                 <Project {...project} />
@@ -186,13 +194,13 @@ const Projects = () => {
           </div>
 
           {/* Pagination */}
-          <div className='flex justify-center mt-8'>
+          <div className='flex justify-center mt-16'>
             {Array.from({ length: Math.ceil(projectsData.length / projectsPerPage) }).map((_, index) => (
               <button
                 key={index}
                 onClick={() => handlePageChange(index + 1)}
                 className={`mx-2 py-2 px-4 rounded ${
-                  currentPage === index + 1 ? 'bg-primary text-white' : 'bg-gray-200 text-gray-800'
+                  currentPage === index + 1 ? 'bg-black text-white' : 'bg-gray-200 text-gray-800'
                 }`}
               >
                 {index + 1}

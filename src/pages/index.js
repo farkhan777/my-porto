@@ -35,7 +35,7 @@ export default function Home() {
                   Download&nbsp;CV <DownloadIcon className={"w-auto ml-1"}/>
                 </Link>
                 <Link href="mailto:farhanhamzah71@gmail.com" target={'_blank'} className='ml-4 text-lg font-medium capitalize text-dark underline'>
-                  Contact
+                  Let's Colaborate!
                 </Link>
               </div>
             </div>

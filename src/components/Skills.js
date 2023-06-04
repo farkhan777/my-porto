@@ -40,6 +40,7 @@ const Skills = () => {
                 <MySkill name="GraphQL" x="-17vw" y="-16vw"></MySkill>
                 <MySkill name="GRPC" x="9vw" y="-18vw"></MySkill>
                 <MySkill name="TensorFlow" x="-19vw" y="15vw"></MySkill>
+                <MySkill name="Next.js" x="19vw" y="15vw"></MySkill>
             </div>
         </>
     )
