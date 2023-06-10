@@ -62,27 +62,27 @@ const Skills = () => {
           <p>Software</p>
           <p>Development</p>
         </motion.div>
-        <MySkill name="Node.js" initialX="0vw" initialY="0vw" _2xlX="13vw" _2xlY="13vw" xlX="13vw" xlY="13vw" lgX="12vw" lgY="13vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw" />
-        <MySkill name="JavaScript" initialX="0vw" initialY="0vw" _2xlX="23vw" _2xlY="9vw" xlX="23vw" xlY="9vw" lgX="22vw" lgY="9vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="PostgresQL" initialX="0vw" initialY="0vw" _2xlX="13vw" _2xlY="9vw" xlX="13vw" xlY="9vw" lgX="13vw" lgY="9vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="ExpressJS" initialX="0vw" initialY="0vw" _2xlX="24vw" _2xlY="13vw" xlX="24vw" xlY="13vw" lgX="26vw" lgY="13vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="MongoDB" initialX="0vw" initialY="0vw" _2xlX="18.5vw" _2xlY="15vw" xlX="18.5vw" xlY="15vw" lgX="18.5vw" lgY="20vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="Golang" initialX="0vw" initialY="0vw" _2xlX="22vw" _2xlY="6vw" xlX="22vw" xlY="6vw" lgX="22vw" lgY="5vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw" />
-        <MySkill name="Restify" initialX="0vw" initialY="0vw" _2xlX="24vw" _2xlY="16vw" xlX="24vw" xlY="16vw" lgX="29vw" lgY="16vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="TypeScript" initialX="0vw" initialY="0vw" _2xlX="12.5vw" _2xlY="16vw" xlX="12.5vw" xlY="16vw" lgX="7vw" lgY="16vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="MySQL" initialX="0vw" initialY="0vw" _2xlX="9vw" _2xlY="10vw" xlX="9vw" xlY="10vw" lgX="7vw" lgY="10vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="Docker" initialX="0vw" initialY="0vw" _2xlX="28vw" _2xlY="10vw" xlX="28vw" xlY="10vw" lgX="30vw" lgY="10vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="ReactJS" initialX="0vw" initialY="0vw" _2xlX="15vw" _2xlY="6vw" xlX="15vw" xlY="6vw" lgX="15vw" lgY="5vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="Laravel" initialX="0vw" initialY="0vw" _2xlX="7vw" _2xlY="14vw" xlX="7vw" xlY="14vw" lgX="2vw" lgY="14vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="PostGIS" initialX="0vw" initialY="0vw" _2xlX="30vw" _2xlY="14vw" xlX="30vw" xlY="14vw" lgX="35vw" lgY="14vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="Next.js" initialX="0vw" initialY="0vw" _2xlX="19vw" _2xlY="19vw" xlX="19vw" xlY="19vw" lgX="19vw" lgY="25vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="Python" initialX="0vw" initialY="0vw" _2xlX="9vw" _2xlY="6vw" xlX="9vw" xlY="6vw" lgX="6vw" lgY="6vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="SQLite" initialX="0vw" initialY="0vw" _2xlX="29vw" _2xlY="6vw" xlX="29vw" xlY="6vw" lgX="31vw" lgY="6vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="PHP" initialX="0vw" initialY="0vw" _2xlX="19vw" _2xlY="4vw" xlX="19vw" xlY="4vw" lgX="19vw" lgY="2vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="Mocha" initialX="0vw" initialY="0vw" _2xlX="3vw" _2xlY="10vw" xlX="3vw" xlY="10vw" lgX="-1vw" lgY="10vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="TensorFlow" initialX="0vw" initialY="0vw" _2xlX="34vw" _2xlY="10vw" xlX="34vw" xlY="10vw" lgX="38vw" lgY="10vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="GraphQL" initialX="0vw" initialY="0vw" _2xlX="9vw" _2xlY="19vw" xlX="9vw" xlY="19vw" lgX="9vw" lgY="26vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
-        <MySkill name="GRPC" initialX="0vw" initialY="0vw" _2xlX="28vw" _2xlY="19vw" xlX="28vw" xlY="19vw" lgX="28vw" lgY="26vw" mdX="10vw" mdY="10vw" smX="10vw" smY="10vw" xsX="10vw" xsY="10vw"></MySkill>
+        <MySkill name="Node.js" initialX="0vw" initialY="0vw" _2xlX="13vw" _2xlY="13vw" xlX="13vw" xlY="13vw" lgX="12vw" lgY="13vw" mdX="11vw" mdY="13vw" smX="13vw" smY="13vw" xsX="6vw" xsY="20vw" />
+        <MySkill name="JavaScript" initialX="0vw" initialY="0vw" _2xlX="23vw" _2xlY="9vw" xlX="23vw" xlY="9vw" lgX="22vw" lgY="9vw" mdX="23vw" mdY="9vw" smX="23vw" smY="9vw" xsX="15vw" xsY="8vw"></MySkill>
+        <MySkill name="PostgresQL" initialX="0vw" initialY="0vw" _2xlX="13vw" _2xlY="9vw" xlX="13vw" xlY="9vw" lgX="13vw" lgY="9vw" mdX="13vw" mdY="9vw" smX="13vw" smY="9vw" xsX="15vw" xsY="35vw"></MySkill>
+        <MySkill name="ExpressJS" initialX="0vw" initialY="0vw" _2xlX="24vw" _2xlY="13vw" xlX="24vw" xlY="13vw" lgX="26vw" lgY="13vw" mdX="27vw" mdY="13vw" smX="24vw" smY="13vw" xsX="24vw" xsY="13vw"></MySkill>
+        <MySkill name="MongoDB" initialX="0vw" initialY="0vw" _2xlX="18.5vw" _2xlY="15vw" xlX="18.5vw" xlY="15vw" lgX="18.5vw" lgY="20vw" mdX="18.5vw" mdY="21vw" smX="18.5vw" smY="21vw" xsX="15vw" xsY="43vw"></MySkill>
+        <MySkill name="Golang" initialX="0vw" initialY="0vw" _2xlX="22vw" _2xlY="6vw" xlX="22vw" xlY="6vw" lgX="22vw" lgY="5vw" mdX="22vw" mdY="5vw" smX="23vw" smY="5vw" xsX="33vw" xsY="35vw" />
+        <MySkill name="Restify" initialX="0vw" initialY="0vw" _2xlX="24vw" _2xlY="16vw" xlX="24vw" xlY="16vw" lgX="29vw" lgY="16vw" mdX="29vw" mdY="16vw" smX="31vw" smY="16vw" xsX="25vw" xsY="20vw"></MySkill>
+        <MySkill name="TypeScript" initialX="0vw" initialY="0vw" _2xlX="12.5vw" _2xlY="16vw" xlX="12.5vw" xlY="16vw" lgX="7vw" lgY="16vw" mdX="7vw" mdY="16vw" smX="6vw" smY="16vw" xsX="7vw" xsY="13vw"></MySkill>
+        <MySkill name="MySQL" initialX="0vw" initialY="0vw" _2xlX="9vw" _2xlY="10vw" xlX="9vw" xlY="10vw" lgX="7vw" lgY="10vw" mdX="7vw" mdY="10vw" smX="6vw" smY="10vw" xsX="-2vw" xsY="23vw"></MySkill>
+        <MySkill name="Docker" initialX="0vw" initialY="0vw" _2xlX="28vw" _2xlY="10vw" xlX="28vw" xlY="10vw" lgX="30vw" lgY="10vw" mdX="30vw" mdY="10vw" smX="31vw" smY="10vw" xsX="34vw" xsY="23vw"></MySkill>
+        <MySkill name="ReactJS" initialX="0vw" initialY="0vw" _2xlX="15vw" _2xlY="6vw" xlX="15vw" xlY="6vw" lgX="15vw" lgY="5vw" mdX="15vw" mdY="5vw" smX="14vw" smY="5vw" xsX="-1vw" xsY="35vw"></MySkill>
+        <MySkill name="Laravel" initialX="0vw" initialY="0vw" _2xlX="7vw" _2xlY="14vw" xlX="7vw" xlY="14vw" lgX="2vw" lgY="14vw" mdX="2vw" mdY="14vw" smX="0vw" smY="14vw" xsX="0vw" xsY="16vw"></MySkill>
+        <MySkill name="PostGIS" initialX="0vw" initialY="0vw" _2xlX="30vw" _2xlY="14vw" xlX="30vw" xlY="14vw" lgX="35vw" lgY="14vw" mdX="35vw" mdY="14vw" smX="37vw" smY="14vw" xsX="31vw" xsY="16vw"></MySkill>
+        <MySkill name="Next.js" initialX="0vw" initialY="0vw" _2xlX="19vw" _2xlY="19vw" xlX="19vw" xlY="19vw" lgX="19vw" lgY="25vw" mdX="19vw" mdY="25vw" smX="19vw" smY="30vw" xsX="17vw" xsY="50vw"></MySkill>
+        <MySkill name="Python" initialX="0vw" initialY="0vw" _2xlX="9vw" _2xlY="6vw" xlX="9vw" xlY="6vw" lgX="6vw" lgY="6vw" mdX="6vw" mdY="6vw" smX="6vw" smY="6vw" xsX="2vw" xsY="7vw"></MySkill>
+        <MySkill name="SQLite" initialX="0vw" initialY="0vw" _2xlX="29vw" _2xlY="6vw" xlX="29vw" xlY="6vw" lgX="31vw" lgY="6vw" mdX="31vw" mdY="6vw" smX="31vw" smY="6vw" xsX="30vw" xsY="7vw"></MySkill>
+        <MySkill name="PHP" initialX="0vw" initialY="0vw" _2xlX="19vw" _2xlY="4vw" xlX="19vw" xlY="4vw" lgX="19vw" lgY="2vw" mdX="19vw" mdY="2vw" smX="19vw" smY="2vw" xsX="18vw" xsY="0vw"></MySkill>
+        <MySkill name="Mocha" initialX="0vw" initialY="0vw" _2xlX="3vw" _2xlY="10vw" xlX="3vw" xlY="10vw" lgX="-1vw" lgY="10vw" mdX="-1vw" mdY="10vw" smX="3vw" smY="22vw" xsX="3vw" xsY="28vw"></MySkill>
+        <MySkill name="TensorFlow" initialX="0vw" initialY="0vw" _2xlX="34vw" _2xlY="10vw" xlX="34vw" xlY="10vw" lgX="38vw" lgY="10vw" mdX="38vw" mdY="10vw" smX="33vw" smY="22vw" xsX="30vw" xsY="28vw"></MySkill>
+        <MySkill name="GraphQL" initialX="0vw" initialY="0vw" _2xlX="9vw" _2xlY="19vw" xlX="9vw" xlY="19vw" lgX="9vw" lgY="26vw" mdX="9vw" mdY="26vw" smX="9vw" smY="26vw" xsX="3vw" xsY="45vw"></MySkill>
+        <MySkill name="GRPC" initialX="0vw" initialY="0vw" _2xlX="28vw" _2xlY="19vw" xlX="28vw" xlY="19vw" lgX="28vw" lgY="26vw" mdX="28vw" mdY="26vw" smX="28vw" smY="26vw" xsX="29vw" xsY="45vw"></MySkill>
       </div>
     </>
   );
