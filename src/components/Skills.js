@@ -32,9 +32,9 @@ const MySkill = ({ name, _2xlX, _2xlY, xlX, xlY, lgX, lgY, mdX, mdY, smX, smY, x
         setX(xsX);
         setY(xsY);
         setZ(6);
-      } else { // Larger screen size, use initial position
-        setX(_2xlX);
-        setY(_2xlY);
+      } else { // Smaller screen size
+        setX(xsX);
+        setY(xsY);
         setZ(7);
       }
     };
@@ -126,6 +126,19 @@ const MySkill = ({ name, _2xlX, _2xlY, xlX, xlY, lgX, lgY, mdX, mdY, smX, smY, x
           {name}
         </motion.div>
       )}
+
+      {z === 7 && (
+        <motion.div
+          className="flex items-center justify-center rounded-full font-semibold bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute dark:text-dark dark:bg-light lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-light xs:font-bold"
+          whileHover={{ scale: 1.05 }}
+          initial={{ x: 70, y: 100 }}
+          whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
+          viewport={{ once: true }}
+          style={{ left: x, top: y }}
+        >
+          {name}
+        </motion.div>
+      )}
     </>
   );
   
@@ -156,7 +169,7 @@ const Skills = () => {
         <MySkill name="Next.js" _2xlX="19vw" _2xlY="19vw" xlX="19vw" xlY="19vw" lgX="19vw" lgY="25vw" mdX="19vw" mdY="25vw" smX="19vw" smY="30vw" xsX="17vw" xsY="50vw"></MySkill>
         <MySkill name="Python" _2xlX="9vw" _2xlY="6vw" xlX="9vw" xlY="6vw" lgX="6vw" lgY="6vw" mdX="6vw" mdY="6vw" smX="6vw" smY="6vw" xsX="2vw" xsY="7vw"></MySkill>
         <MySkill name="SQLite" _2xlX="29vw" _2xlY="6vw" xlX="29vw" xlY="6vw" lgX="31vw" lgY="6vw" mdX="31vw" mdY="6vw" smX="31vw" smY="6vw" xsX="30vw" xsY="7vw"></MySkill>
-        <MySkill name="PHP" _2xlX="19vw" _2xlY="4vw" xlX="19vw" xlY="4vw" lgX="19vw" lgY="2vw" mdX="19vw" mdY="2vw" smX="19vw" smY="2vw" xsX="18vw" xsY="0vw"></MySkill>
+        <MySkill name="PHP" _2xlX="19vw" _2xlY="4vw" xlX="19vw" xlY="4vw" lgX="19vw" lgY="2vw" mdX="19vw" mdY="2vw" smX="19vw" smY="2vw" xsX="18vw" xsY="1vw"></MySkill>
         <MySkill name="Mocha" _2xlX="3vw" _2xlY="10vw" xlX="3vw" xlY="10vw" lgX="-1vw" lgY="10vw" mdX="-1vw" mdY="10vw" smX="3vw" smY="22vw" xsX="3vw" xsY="28vw"></MySkill>
         <MySkill name="TensorFlow" _2xlX="34vw" _2xlY="10vw" xlX="34vw" xlY="10vw" lgX="38vw" lgY="10vw" mdX="38vw" mdY="10vw" smX="33vw" smY="22vw" xsX="30vw" xsY="28vw"></MySkill>
         <MySkill name="GraphQL" _2xlX="9vw" _2xlY="19vw" xlX="9vw" xlY="19vw" lgX="9vw" lgY="26vw" mdX="9vw" mdY="26vw" smX="9vw" smY="26vw" xsX="3vw" xsY="45vw"></MySkill>
