@@ -5,8 +5,8 @@ import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import Image from 'next/image';
 import { GithubIcon } from '@/components/Icons';
-import { useRouter } from 'next/router';
-import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg';
+import project1 from '../../public/images/projects/sdn1watukebo.png';
+import project2 from '../../public/images/projects/lp-monitor-covid-19.jpg';
 import { motion } from 'framer-motion';
 
 const FramerImage = motion(Image);
@@ -66,100 +66,27 @@ const Project = ({ type, title, summary, img, link, github }) => {
   );
 };
 
-const Projects = () => {
-  const projectsData = [
-    {
-      title: 'Crypto Screener Application',
-      img: project1,
-      summary: 'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-      link: '/',
-      github: '/',
-      type: 'Featured Project',
-    },
-    {
-        title: 'Crypto Screener Application',
-        img: project1,
-        summary: 'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-        link: '/',
-        github: '/',
-        type: 'Featured Project',
-      },
-      {
-        title: 'Crypto Screener Application',
-        img: project1,
-        summary: 'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-        link: '/',
-        github: '/',
-        type: 'Featured Project',
-      },
-      {
-          title: 'Crypto Screener Application',
-          img: project1,
-          summary: 'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-          link: '/',
-          github: '/',
-          type: 'Featured Project',
-        },
-        {
-            title: 'Crypto Screener Application',
-            img: project1,
-            summary: 'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-            link: '/',
-            github: '/',
-            type: 'Featured Project',
-          },
-          {
-              title: 'Crypto Screener Application',
-              img: project1,
-              summary: 'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-              link: '/',
-              github: '/',
-              type: 'Featured Project',
-            },
-            {
-              title: 'Crypto Screener Application',
-              img: project1,
-              summary: 'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-              link: '/',
-              github: '/',
-              type: 'Featured Project',
-            },
-            {
-                title: 'Crypto Screener Application',
-                img: project1,
-                summary: 'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-                link: '/',
-                github: '/',
-                type: 'Featured Project',
-            },
-            {
-                title: 'Crypto Screener Application',
-                img: project1,
-                summary: 'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-                link: '/',
-                github: '/',
-                type: 'Featured Project',
-              },
-              {
-                title: 'Crypto Screener Application',
-                img: project1,
-                summary: 'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-                link: '/',
-                github: '/',
-                type: 'Featured Project',
-              },
-              {
-                  title: 'Crypto Screener Application',
-                  img: project1,
-                  summary: 'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-                  link: '/',
-                  github: '/',
-                  type: 'Featured Project',
-              },
-    // Add more project data here...
-  ];
+export const projectsData = [
+  {
+    type: 'SD Negeri 1 Watukebo',
+    img: project1,
+    summary: 'Website for 1 Watukebo State Elementary School',
+    link: 'https://sdn1watukebo.sch.id/',
+    github: 'https://github.com/BC07/SDN-1-Watukebo',
+  },
+  {
+    type: 'Covid Vaccination Rate',
+    img: project2,
+    summary: 'Consume API ML Prediction in Front-End, built with React JS, Antd, and Data Visualization with Recharts.',
+    link: 'https://pantau-covid-19.netlify.app/',
+    github: 'https://github.com/ilhamAdhim/covid-vaccination-rate',
+  },
+  // Add more project data here...
+];
 
-  const router = useRouter();
+const Projects = () => {
+
+
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 6;
 

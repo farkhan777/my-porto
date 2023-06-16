@@ -24,7 +24,7 @@ const Education = () => {
     const { scrollYProgress } = useScroll(
         {
             target: ref,
-            offset: ["start end", "center start"]
+            offset: ["start end", "center"]
         }
     )
     return (
@@ -38,22 +38,11 @@ const Education = () => {
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                     
                     <Details type="Bachelor Of Science In Computer Science" 
-                    time="2016-2020" 
-                    place="Massachusetts Institute Of Technology (MIT)" 
-                    info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                    Intelligence." />
+                    time="2019 - 2023" 
+                    place="University Of Muhammadiyah Malang" 
+                    info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, Artificial 
+                    Intelligence, UI/UX Ect." />
                     
-                    <Details type="Bachelor Of Science In Computer Science" 
-                    time="2016-2020" 
-                    place="Massachusetts Institute Of Technology (MIT)" 
-                    info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                    Intelligence." />
-
-                    <Details type="Bachelor Of Science In Computer Science" 
-                    time="2016-2020" 
-                    place="Massachusetts Institute Of Technology (MIT)" 
-                    info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                    Intelligence." />
                 </ul>
             </div>
 

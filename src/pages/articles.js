@@ -2,12 +2,16 @@ import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Link from 'next/link'
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import Image from 'next/image'
 import article1 from "../../public/images/articles/pagination component in reactjs.jpg"
 import article2 from "../../public/images/articles/create loading screen in react js.jpg"
 import article3 from "../../public/images/articles/create modal component in react using react portals.png"
 import { motion, useMotionValue } from 'framer-motion'
+import useThemeSwitcher from "../components/hooks/useThemeSwitcher"
+import { ArticlesIcon1, ArticlesIcon2 } from '@/components/Icons'
+import articles1 from '../../public/images/articles/articlesDark.png';
+import articles2 from '../../public/images/articles/articlesLight.png';
 
 const FramerImage = motion(Image);
 
@@ -63,6 +67,16 @@ const FeaturedArticle = ({img, title, time, summary, link}) => {
 }
 
 const articles = () => {
+    const [mode, setMode] = useThemeSwitcher();
+    const [imageSrc, setImageSrc] = useState('');
+  
+    useEffect(() => {
+      if (mode === 'dark') {
+        setImageSrc(articles1);
+      } else {
+        setImageSrc(articles2);
+      }
+    }, [mode]);
     return (
         <>
             <Head>
@@ -71,8 +85,8 @@ const articles = () => {
             </Head>
             <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
                 <Layout className='pt-16'>
-                    <AnimatedText text="Words Can Cahnge The World!" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl text-center' />
-                    <ul className='grid grid-cols-2 items-center gap-16 lg-gap-8 md:grid-cols-1 md:gap-y-16'>
+                    {/* <AnimatedText text="Words Can Cahnge The World!" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl text-center' /> */}
+                    {/* <ul className='grid grid-cols-2 items-center gap-16 lg-gap-8 md:grid-cols-1 md:gap-y-16'>
                         <FeaturedArticle 
                         title="Build A Custom Pagination Component In Reactjs From Scratch"
                         summary="Learn how to build a custom pagination component in ReactJS from scratch. 
@@ -102,7 +116,15 @@ const articles = () => {
                         date="June 01, 2023" link="/" image={article3} />
                         <Article title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling" 
                         date="June 01, 2023" link="/" image={article3} />
-                    </ul>
+                    </ul> */}
+
+                    <div className='flex justify-center items-center '>
+                    
+                        {/* <ArticlesIcon2 className='w-6' /> */}
+                        {/* <Image src={article1} className='' alt='' />  */}
+                        <div className="bg-Pic dark:bg-Pic-dark w-[550px] h-[450px]"></div>
+                        
+                    </div>
                 </Layout>
             </main>
         </>

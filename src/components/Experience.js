@@ -25,7 +25,7 @@ const Experience = () => {
     const { scrollYProgress } = useScroll(
         {
             target: ref,
-            offset: ["start end", "center start"]
+            offset: ["start center", "end"]
         }
     )
     return (
@@ -38,60 +38,42 @@ const Experience = () => {
 
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                     
-                    <Details position="Software Engineer" 
-                    company="Google" 
-                    companyLink="www.google.com" 
-                    time="2022-Present" 
-                    address="Mountain View, CA" 
-                    work="Worked on a team responsible for developing new features for Google's search engine, 
-                    including improving the accuracy and relevance of search results and developing 
-                    new tools for data analysis and visualization" />
+                    <Details position="Back End Developer" 
+                    company="PT Telekomunikasi Indonesia Tbk" 
+                    companyLink="https://www.telkom.co.id/sites" 
+                    time="September 2022 - March 2023" 
+                    address="Bandung, West Java" 
+                    work="Worked on the National Address Database project, where my role involves developing, improving, and maintaining high-quality back-end services and APIs. I actively participate in the entire application lifecycle, with a particular focus on coding and debugging. Working within an agile culture, I collaborate closely with a cross-functional team comprising backend developers, frontend developers, UI/UX designers, data scientists, product owners, and more." />
 
-                    <Details position="Software Engineer" 
-                    company="Google" 
-                    companyLink="www.google.com" 
-                    time="2022-Present" 
-                    address="Mountain View, CA" 
-                    work="Worked on a team responsible for developing new features for Google's search engine, 
-                    including improving the accuracy and relevance of search results and developing 
-                    new tools for data analysis and visualization" />
+                    <Details position="Back End Developer" 
+                    company="PT Investree Radhika Jaya" 
+                    companyLink="https://investree.id/" 
+                    time="August 2022 - September 2022" 
+                    address="Remote" 
+                    work="Learned with multiple tech stacks and have gained proficiency in using Postgresql for database management. Additionally, I have developed REST APIs using the Spring Boot framework." />
 
-                    <Details position="Software Engineer" 
-                    company="Google" 
-                    companyLink="www.google.com" 
-                    time="2022-Present" 
-                    address="Mountain View, CA" 
-                    work="Worked on a team responsible for developing new features for Google's search engine, 
-                    including improving the accuracy and relevance of search results and developing 
-                    new tools for data analysis and visualization" />
+                    <Details position="Back End Engineer" 
+                    company="Generasi Gigih 2.0 by YABB & GoTo" 
+                    companyLink="https://www.anakbangsabisa.org/generasi-gigih/" 
+                    time="February 2022 - July 2022" 
+                    address="Remote" 
+                    work="Learned to create a REST API using Ruby on Rails, gaining practical experience in back-end development. During this process, I have also familiarized myself with Postgresql, emphasizing clean code and adhering to the SOLID principle. In addition, I have developed REST APIs using Node.js, Sequelize, and Postgresql, expanding my skill set and enabling me to choose appropriate technologies for efficient back-end development." />
 
-                    <Details position="Software Engineer" 
-                    company="Google" 
-                    companyLink="www.google.com" 
-                    time="2022-Present" 
-                    address="Mountain View, CA" 
-                    work="Worked on a team responsible for developing new features for Google's search engine, 
-                    including improving the accuracy and relevance of search results and developing 
-                    new tools for data analysis and visualization" />
+                    <Details position="Machine Learning and Front-End Web Developer - KAMPUS MERDEKA" 
+                    company="PT Presentologics" 
+                    companyLink="https://www.dicoding.com/" 
+                    time="August 2021 - January 2022" 
+                    address="Remote" 
+                    work="I learned about Machine Learning and Deep Learning algorithms, which helped me create effective models. I also gained expertise in optimizing and deploying these models to Flask. Additionally, I dedicated time to mastering ReactJs for building dynamic and interactive user interfaces. To bring everything together, I combined my Machine Learning expertise, Flask, and ReactJs skills to develop a web application that seamlessly integrates a powerful Machine Learning model, delivering a comprehensive and valuable user experience." />
 
-                    <Details position="Software Engineer" 
-                    company="Google" 
-                    companyLink="www.google.com" 
-                    time="2022-Present" 
-                    address="Mountain View, CA" 
-                    work="Worked on a team responsible for developing new features for Google's search engine, 
-                    including improving the accuracy and relevance of search results and developing 
-                    new tools for data analysis and visualization" />
+                    
 
-                    <Details position="Software Engineer" 
-                    company="Google" 
-                    companyLink="www.google.com" 
-                    time="2022-Present" 
-                    address="Mountain View, CA" 
-                    work="Worked on a team responsible for developing new features for Google's search engine, 
-                    including improving the accuracy and relevance of search results and developing 
-                    new tools for data analysis and visualization" />
-
+                    <Details position="Laboratory Assistant" 
+                    company="Informatics Laboratory UMM" 
+                    companyLink="https://infotech.umm.ac.id/" 
+                    time="August 2020 - March 2023" 
+                    address="Malang, East Java" 
+                    work="In this role, my main responsibilities included supporting lecturers in delivering course material to students according to the established curriculum. I assisted in teaching and assessing practical activities during lab sessions. Additionally, I collaborated with subject lecturers to coordinate and evaluate student learning outcomes based on the completed practical activities. Another aspect of my role involved designing and creating learning modules that supplemented the practical activities, following the guidance of the course lecturer." />
 
                 </ul>
             </div>

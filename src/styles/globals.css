@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dark .dark\:bg-Pic-dark {
+    background-image: url("../../public/images/articles/articlesDark.png");
+    background-size: 100% 100%;
+  }
+  
+  .bg-Pic {
+    background-image: url("../../public/images/articles/articlesLight.png");
+    background-size: 100% 100%;
+  }
