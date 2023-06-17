@@ -116,7 +116,10 @@ const MySkill = ({ name, _2xlX, _2xlY, xlX, xlY, lgX, lgY, mdX, mdY, smX, smY, x
 
       {z === 6 && (
         <motion.div
-          className="flex items-center justify-center rounded-full font-semibold bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute dark:text-dark dark:bg-light lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-light xs:font-bold"
+          className="flex items-center justify-center rounded-full font-semibold bg-dark text-light py-3 
+          px-6 shadow-dark cursor-pointer absolute dark:text-dark dark:bg-light lg:py-2 lg:px-4 
+          md:text-sm md:py-1.5 md:px-3 xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-light 
+          xs:font-bold"
           whileHover={{ scale: 1.05 }}
           initial={{ x: 70, y: 100 }}
           whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
@@ -149,9 +152,11 @@ const Skills = () => {
     <>
       <h2 className="font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32">Skills</h2>
       <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd sm:bg-circularLightSm sm:dark:bg-circularDarkSm">
-        <motion.div className="flex flex-col items-center justify-center rounded-full font-semibold bg-dark text-light p-6 shadow-dark cursor-pointer dark:text-dark dark:bg-light lg:p-6 md:p-4 xs:text-xs xs:p-2" whileHover={{ scale: 1.05 }}>
-          <p>Software</p>
-          <p>Development</p>
+        <motion.div className="flex flex-col items-center justify-center rounded-full font-semibold bg-dark text-light 
+        p-6 shadow-dark cursor-pointer dark:text-dark dark:bg-light 
+        lg:p-6 md:p-4 xs:text-xs xs:p-2" 
+        whileHover={{ scale: 1.05 }}>
+          <p>Web Dev</p>
         </motion.div>
         <MySkill name="Node.js" _2xlX="13vw" _2xlY="13vw" xlX="13vw" xlY="13vw" lgX="12vw" lgY="13vw" mdX="11vw" mdY="13vw" smX="13vw" smY="13vw" xsX="6vw" xsY="20vw" />
         <MySkill name="JavaScript" _2xlX="23vw" _2xlY="9vw" xlX="23vw" xlY="9vw" lgX="22vw" lgY="9vw" mdX="23vw" mdY="9vw" smX="23vw" smY="9vw" xsX="15vw" xsY="8vw"></MySkill>

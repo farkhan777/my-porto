@@ -49,11 +49,11 @@ const About = () => {
                             <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
                             <p className='font-medium'>
                                 Hi, I am Farkhan, a software engineer and an Informatics Engineering student at University of Muhammadiyah Malang in Indonesia. 
-                                I love coding and learning new things, especially in the fields of web development and machine learning.
+                                I love coding and learning new things, especially in the fields of software development and machine learning.
                             </p>
                             <p className='my-4 font-medium'>
                                 I have worked on various projects using different technologies such as Node.js, Golang, ReactJS, MongoDB, Postgresql, and Python. 
-                                Some of them are related to Backend Development, Machine Learning and Front End Development. 
+                                Some of them are related to Back End Development, Machine Learning and Front End Development. 
                                 {/* I have also participated in some programs and competitions to improve my skills and network with other developers and professionals. */}
                             </p>
                             <p className='font-medium'>
