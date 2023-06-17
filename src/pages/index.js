@@ -32,7 +32,7 @@ export default function Home() {
                 className='flex items-center bg-dark text-light p-2.5 px-6 
                 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark 
                 border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base' download={true}>
-                  Download&nbsp;CV <DownloadIcon className={"w-auto ml-1"}/>
+                  Download&nbsp;CV <DownloadIcon className={"w-auto ml-1 sm:w-auto xs:w-4"}/>
                 </Link>
                 <Link href="mailto:farhanhamzah71@gmail.com" target={'_blank'} className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base'>
                   Let's Colaborate!
