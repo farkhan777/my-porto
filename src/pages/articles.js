@@ -66,7 +66,7 @@ const FeaturedArticle = ({img, title, time, summary, link}) => {
     )
 }
 
-const articles = () => {
+const Articles = () => {
     const [z, setZ] = useState("");
 
     useEffect(() => {
@@ -154,4 +154,4 @@ const articles = () => {
     )
 }
 
-export default articles
+export default Articles
