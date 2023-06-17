@@ -2,7 +2,7 @@ import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Link from 'next/link'
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import Image from 'next/image'
 import article1 from "../../public/images/articles/pagination component in reactjs.jpg"
 import article2 from "../../public/images/articles/create loading screen in react js.jpg"
@@ -67,16 +67,34 @@ const FeaturedArticle = ({img, title, time, summary, link}) => {
 }
 
 const articles = () => {
-    const [mode, setMode] = useThemeSwitcher();
-    const [imageSrc, setImageSrc] = useState('');
-  
+    const [z, setZ] = useState("");
+
     useEffect(() => {
-      if (mode === 'dark') {
-        setImageSrc(articles1);
-      } else {
-        setImageSrc(articles2);
-      }
-    }, [mode]);
+      const handleResize = () => {
+        if (window.innerWidth > 1535) { // Smaller screen size, adjust position
+          setZ("🚧 The work you wanted to see is still in progress 🚧");
+        } else if(window.innerWidth > 1279) {
+          setZ("🚧 The work you wanted to see is still in progress 🚧");
+        } else if(window.innerWidth > 1023) {
+          setZ("🚧 The work you wanted to see is still in progress 🚧");
+        } else if(window.innerWidth > 767) {
+          setZ("🚧 Work in Progress 🚧");
+        } else if(window.innerWidth > 639) {
+          setZ("🚧 Work in Progress 🚧");
+        } else if(window.innerWidth > 479) {
+          setZ("🚧 Work in Progress 🚧");
+        } else { // Smaller screen size
+          setZ("🚧 Work in Progress 🚧");
+        }
+      };
+  
+      handleResize();
+      window.addEventListener('resize', handleResize);
+  
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
     return (
         <>
             <Head>
@@ -118,12 +136,17 @@ const articles = () => {
                         date="June 01, 2023" link="/" image={article3} />
                     </ul> */}
 
-                    <div className='flex justify-center items-center '>
+                    <div className='flex justify-center items-center floating'>
+                        <div className="bg-Pic dark:bg-Pic-dark w-full h-[28rem] md:w-full sm:h-[26rem]"></div>
+                    </div>
                     
-                        {/* <ArticlesIcon2 className='w-6' /> */}
-                        {/* <Image src={article1} className='' alt='' />  */}
-                        <div className="bg-Pic dark:bg-Pic-dark w-[550px] h-[450px]"></div>
-                        
+                    <h2 className='flex justify-center items-center pt-10 pb-2 text-2xl font-semibold sm:pt-0'>So eager aren't we ?</h2>
+                    <p className='flex justify-center items-center text-1xl font-medium text-dark/75 dark:text-light/75'>{z}</p>
+                    
+                    <div className='flex justify-center items-center pt-10 sm:pt-10'>
+                    <Link href="/" className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base'>
+                        Cool ! Let's Head Back
+                    </Link>
                     </div>
                 </Layout>
             </main>

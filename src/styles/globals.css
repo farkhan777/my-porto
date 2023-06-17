@@ -3,11 +3,24 @@
 @tailwind utilities;
 
 .dark .dark\:bg-Pic-dark {
-    background-image: url("../../public/images/articles/articlesDark.png");
+    background-image: url("../../public/images/articles/articlesDark.svg");
     background-size: 100% 100%;
   }
   
   .bg-Pic {
-    background-image: url("../../public/images/articles/articlesLight.png");
+    background-image: url("../../public/images/articles/articlesLight.svg");
     background-size: 100% 100%;
   }
+
+.floating {
+	animation-name: floating;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+	0% { transform: translate(0, 0px); }
+	50% { transform: translate(0, 20px); }
+	100% { transform: translate(0, -0px); }
+}
