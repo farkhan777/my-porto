@@ -7,6 +7,8 @@ import Image from 'next/image';
 import { GithubIcon } from '@/components/Icons';
 import project1 from '../../public/images/projects/sdn1watukebo.png';
 import project2 from '../../public/images/projects/lp-monitor-covid-19.jpg';
+import project3 from '../../public/images/projects/online_learning.png';
+import project4 from '../../public/images/projects/shopping.png';
 import { motion } from 'framer-motion';
 
 const FramerImage = motion(Image);
@@ -80,6 +82,20 @@ export const projectsData = [
     summary: 'Consume API ML Prediction in Front-End, built with React JS, Antd, and Data Visualization with Recharts.',
     link: 'https://pantau-covid-19.netlify.app/',
     github: 'https://github.com/ilhamAdhim/covid-vaccination-rate',
+  },
+  {
+    type: 'Bootcamp App API',
+    img: project3,
+    summary: 'Backend API for Bootcamp Web application, which is a bootcamp directory website made with Express to manage bootcamps, course, users, and authentication.',
+    link: 'https://documenter.getpostman.com/view/21759373/2s93z58jDa',
+    github: 'https://github.com/farkhan777/Bootcamp-Web-API',
+  },
+  {
+    type: 'E-commerce API',
+    img: project4,
+    summary: 'Backend API for E-shop application, which is a E-shop directory API made with Express to manage bootcamps, course, users, and authentication.',
+    link: 'https://documenter.getpostman.com/view/21759373/2s93z6d48a',
+    github: 'https://github.com/farkhan777/E-commerce-Backend',
   },
   // Add more project data here...
 ];
