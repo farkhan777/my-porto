@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
-import profilePic from "../../public/images/profile/farkhan9.png"
+import profilePic from "../../public/images/profile/farkhan777_rounded.png"
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { DownloadIcon, LinkArrow } from '@/components/Icons'
